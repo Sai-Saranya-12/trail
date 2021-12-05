@@ -1,0 +1,161 @@
+<html>
+  <head>
+
+  </head>
+<body>
+  <title>Code PlayBook</title>
+  <h2>Introduction to HTML</h2>
+  <h4>Video 13</h4>
+  <h4>Introduction to <b>hr</b> tag</h4>
+  <p>For in detail explanation about hr element, please refer <a href="http://devdocs.io/html/element/hr">devdocs</a></p>
+  <br>
+  <p>hr element is mainly used to get horizontal line. There are many attributes availabe in hr tag. </p>
+  <ul>
+    <li>Align: Used to emphasize if the line should be right aligned or left aligned.</li>
+    <li>Size: Determines the height of the line in pixels</li>
+    <li>noshade: determines it should have any color</li>
+    <li>Color: determines the color of the horizontal line</li>
+    <li>Width: determines the width of the horizontal line</li>
+  </ul>
+  <p>Snapshot of code representing the usage of hr tag</p>
+  <!-- snapshot of code determining the use of hr tag-->
+  <center>
+    <hr size="3" noshade>
+    <h1>THE ADVENTURES OF</h1>
+    <br>
+    <h1>SHERLOCK HOLMES</h1>
+    <br>
+    <br>
+    <h3>BY</h3>
+    <br>
+    <br>
+    <h1>SIR ARTHUR CONAN DOYLE</h1>
+    <hr size="3" noshade>
+  </center>
+<br>
+<br>
+<h4>Video 15</h4>
+<p>doctype html- means tells the browseer that which version of html we are using. meta gives additional data to browser. All the data present in the webpage is encoded using utf-8 encoding system. All the characters and emojis were supported by utf-8. you can get more information about emojis from <a href="https://unicode-table.com/en/sets/heart-symbols/">unicode</a>. </p>
+<p>meta tags helps search engine to provide much information about website.</p>
+<h4>Lists</h4>
+<h5>Ordered Lists</h5>
+<p>We use tag 'ol' to enclose the ordered lists, Individual elements are enclsed in 'li' tag.We can customise whether we need roman numbers, start number for ordering</p>
+<h5>Unordered Lists</h5>
+<p>We use tag 'ul' to enclose the unordered lists. Individual elements are enclosed in 'li' tag</p>
+
+<h4>Video 18</h4>
+<p>img tag is self closing tag. syntax is as follows</p>
+<img src="https://crop-circle.imageonline.co/crop-circle.png" alt="Dog bomma :D">
+<p>It's not preferable to use web adress as part of source in img tag. If the site in which image is hosted was down, we can no longer able to view the image in our website. To avoid this, we can download the image to our local folder and provide that path in src attribute. syntax is same. Just mention image file name in src part.</p>
+
+<h3>Tables</h3>
+<table border="1px">
+  <thead>
+  <tr>
+    <th>S.No</th>
+    <th>First Name</th>
+    <th>Company</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>Saranya</td>
+    <td>XXXXX</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Sai</td>
+    <td>ZZZZZ</td>
+  </tr>
+  </tbody>
+</table>
+
+<br>
+<h3>Nested Tables</h3>
+<table border="1px" cellspacing="20">
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>iOS Development</td>
+          <td>🌟🌟🌟🌟🌟</td>
+        </tr>
+        <tr>
+          <td>Web Development</td>
+          <td>🌟🌟🌟</td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <td>Photography</td>
+          <td>🌟🌟</td>
+        </tr>
+        <tr>
+          <td>Painting</td>
+          <td>🌟</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<h3>Form</h3>
+<p>Make use of form tag. refer MDN documentation for more details</p>
+<p>There are any type of inputs that we can consider asgiving type in input element.</p>
+<form class="" method="post">
+  <label>Your Name</label>
+  <input type="text">
+  <br>
+  <label>Color type input</label>
+  <input type="color">
+  <br>
+  <!-- <br> -->
+  <p>Do you want to submit the form</p>
+  <label>Check box</label>
+  <input type="checkbox">
+  <br>
+  <label>Enter password</label>
+  <input type="password">
+  <br>
+  <label>File Input</label>
+  <input type="file">
+  <br>
+  <label>Submit button</label>
+  <input type="submit">
+  <br>
+  <label>Range</label>
+  <input type="range">
+  <br>
+  <label>Radio</label>
+  <input type="radio">
+  <br>
+  <label>Date</label>
+  <input type="date">
+</form>
+<br>
+<hr>
+<!--The moment we hit submit button, it will redirect to codeplaybook.html since we placed action as that html page-->
+<!--In this case, mail is being sent to ssrny110@gmail.com. mail window will be opened-->
+<form action="mailto:ssrny110@gmail.com" enctype="text/plain" method="post">
+  <label>Your Name:</label>
+  <input type="text" name="yourName">
+  <br>
+  <label>Your Email:</label>
+  <input type="email" name="yourEmail">
+  <br>
+  <label>Your Message:</label><br>
+  <textarea name="name" row="8" cols="50" name="yourMessage"></textarea>
+  <!--The row and cols determine the default size of the text area to be appeared on the web page. This can also be maximised or minimised-->
+  <br>
+  <input type="submit">
+  <input type="url">
+  <input type="search">
+  <input type="week">
+</form>
+</body>
+</html>
+
+
